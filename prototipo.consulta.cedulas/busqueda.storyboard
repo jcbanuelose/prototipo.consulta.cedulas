@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6254" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="aka-74-O6c">
+            <objects>
+                <viewController id="TXZ-vF-bsA" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="u3K-0S-xzD"/>
+                        <viewControllerLayoutGuide type="bottom" id="eD4-i0-e8B"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rxy-We-BRW">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="NOMBRE" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xmd-Gh-0Vc">
+                                <rect key="frame" x="16" y="83" width="322" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="APELLIDO PATERNO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="joF-WN-FYp">
+                                <rect key="frame" x="16" y="166" width="322" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="APELLIDO MATERNO" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pRj-qy-xOm">
+                                <rect key="frame" x="16" y="248" width="322" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="CONSULTA CEDULAS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E21-es-bMo">
+                                <rect key="frame" x="16" y="36" width="322" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rxG-M8-H7Q">
+                                <rect key="frame" x="16" y="615" width="322" height="44"/>
+                                <items>
+                                    <barButtonItem width="42" style="plain" systemItem="fixedSpace" id="FrS-pD-i02"/>
+                                    <barButtonItem image="lupa1_ios.png" id="DT3-MF-GSe"/>
+                                    <barButtonItem image="lupa2_ios.png" id="M1f-Xo-ao2"/>
+                                    <barButtonItem image="lupa3_ios.png" id="7O5-qw-Wx8"/>
+                                    <barButtonItem image="arriba_ios.png" id="tEe-s5-RWm"/>
+                                </items>
+                                <color key="tintColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </toolbar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LcV-Qb-YYa">
+                                <rect key="frame" x="16" y="344" width="322" height="258"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vhD-6B-g1d">
+                                <rect key="frame" x="146" y="306" width="63" height="30"/>
+                                <state key="normal" title="BUSCAR">
+                                    <color key="titleColor" red="0.047447127530000001" green="0.012770918209999999" blue="0.02394464709" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UBN-c0-Kd8" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="699.5" y="436.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arriba_ios.png" width="50" height="50"/>
+        <image name="lupa1_ios.png" width="50" height="50"/>
+        <image name="lupa2_ios.png" width="50" height="50"/>
+        <image name="lupa3_ios.png" width="50" height="50"/>
+    </resources>
+</document>
